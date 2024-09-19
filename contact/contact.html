@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroSphere - Contact</title>
+
+  <link rel="shortcut icon" href="../assests/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <div class="main-conatiner">
+    <header class="header-section">
+      <div class="header-container">
+        <a href="../index.html" class="logo">Astro<span>Sphere</span></a>
+        <div class="nav-items">
+          <a href="../index.html" class="nav-item">Home</a>
+          <a href="../index.html#about-section" class="nav-item">About</a>
+          <a href="../index.html#services-section" class="nav-item">Services</a>
+          <a href="../index.html#reviews-section" class="nav-item">Testimonials</a>
+          <a href="../index.html#experts-section" class="nav-item">Our Team</a>
+          <a href="#" class="nav-item contact-item">Contact</a> 
+        </div>
+        <button class="contact-btn" onclick="window.location.href='#'">Contact</button> 
+        <div class="menu-toggle">
+          <span class="three-dots">&#9776;</span> 
+          <span class="cross-icon">&times;</span> 
+        </div>
+      </div>
+    </header>
+
+
+
+    <section class="contact-section">
+      <div class="contact-container1">
+        <div class="heading">
+          <h3>Get In <span>Touch</span></h3>
+          <p>Get in touch with AstroSphere for personalized astrological insights. Our expert astrologers blend ancient
+            wisdom with modern techniques to guide you through life's challenges. Connect with us today!</p>
+        </div>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact">
+              <div class="contact-img">
+                <img src="../assests/call.png" alt="">
+              </div>
+              <div class="contact-info">
+                <h3 class="title">Phone</h3>
+                <p class="desc">+91 4324234324</p>
+                <p class="desc">+1800 326 3234
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact">
+              <div class="contact-img">
+                <img src="../assests/email.png" alt="">
+              </div>
+              <div class="contact-info">
+                <h3 class="title">Email</h3>
+                <p class="desc">support@website.com <br>
+                  info@website.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact">
+              <div class="contact-img">
+                <img src="../assests/location.png" alt="">
+              </div>
+              <div class="contact-info">
+                <h3 class="title">Location</h3>
+                <p class="desc">27, Harmara, Sikar Road, Jaipur <br>Rajasthan - 302013 </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-container2">
+        <div class="heading">
+          <h3> Schedule Your <span>Appointment</span></h3>
+          <p>Book your appointment with our expert astrologers for personalized insights and guidance. Align with cosmic
+            energies and navigate life's challenges with confidence and clarity.</p>
+        </div>
+        <form action="" onsubmit="handleForm(event)" class="contact-form">
+
+          <div class="input-wrapper">
+            <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field"
+              id="name">
+
+            <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
+              class="input-field" id="email">
+          </div>
+
+
+
+          <div class="input-wrapper">
+            <input type="date" name="date" aria-label="date" placeholder="Date" class="input-field" id="date">
+
+            <input type="time" name="time" aria-label="time" placeholder="Time" class="input-field" id="time">
+          </div>
+
+
+
+
+
+
+
+
+          <div class="input-wrapper">
+            <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="input-field"
+              id="subject">
+
+            <input type="number" name="phone" aria-label="phone" placeholder="Phone number" class="input-field"
+              id="phone">
+          </div>
+
+          <textarea name="message" aria-label="message" placeholder="Your message...*" required class="input-field"
+            id="message"></textarea>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="terms_and_policy" id="terms" required class="checkbox" id="checkbox">
+
+            <label for="terms" class="label">
+              Accept <a href="#" class="label-link">Terms of Services</a> and <a href="#" class="label-link">Privacy
+                Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+
+          <div class="response">
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="footer" style="margin-bottom: 0;">
+      <div class="box-container">
+        <div class="box">
+          <h3>About us</h3>
+          <p>AstroSphere is an astrology platform that offers personalized horoscopes, celestial insights, and zodiac
+            forecasts, helping users navigate life’s challenges by aligning with cosmic energies for guidance and
+            self-discovery.</p>
+        </div>
+        <div class="box">
+          <h3>Branch Locations</h3>
+          <a href="#">India</a>
+          <a href="#">USA</a>
+          <a href="#">Japan</a>
+          <a href="#">France</a>
+
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="../index.html#hero-section">Home</a>
+          <a href="../index.html#about-section">About</a>
+          <a href="../index.html#services-section">Services</a>
+          <a href="../index.html#reviews-section">Review</a>
+          <a href="#">Appointment</a>
+
+        </div>
+        <div class="box">
+          <h3>Follow us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Youtube</a>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+
+      <h1 class="credit">Created by <span>Sachin Prajapati</span> | All rights Reserved</h1>
+    </section>
+  </div>
+
+
+
+
+
+  <script src="contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+.main-conatiner{
+  position: absolute;
+  top: 0;
+
+}
+
+
+.contact-container1 {
+  background-color: whitesmoke;
+  padding: 1.5rem 0;
+}
+
+.contact-methods {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-method {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border: 0.5rem solid whitesmoke;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.2rem;
+  width: 25%;
+  /* height: 20rem; */
+  /* flex: 1 1 15rem; */
+  box-sizing: border-box;
+}
+
+.contact-method:hover {
+  background-color: white;
+}
+
+.contact-img {
+  background-color: orangered;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease-in-out;
+}
+
+.contact-img img {
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  object-fit: cover;
+  /* background-color: orangered; */
+}
+
+
+
+.contact-method:hover .contact-img {
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info .title {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  transition: .3s ease-in-out;
+}
+
+.contact:hover .contact-info .title {
+  color: orangered;
+}
+
+.contact-info .desc {
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-methods-section {
+    margin: 0 2rem;
+  }
+
+  .contact-method {
+    width: 45%;
+  }
+
+  .contact-info .title {
+    font-size: 1.3rem;
+  }
+
+  .contact-info .desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-methods-section {
+    margin: 0 1rem;
+  }
+
+  .contact-method {
+    width: 100%;
+  }
+
+  .contact-info .title {
+    font-size: 1.2rem;
+  }
+
+  .contact-info .desc {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-methods-section {
+    margin: 0 0.5rem;
+  }
+
+  .contact-img img {
+    width: 7rem;
+    /* Reduce image size on small screens */
+  }
+
+  .contact-info .title {
+    font-size: 1.1rem;
+  }
+
+  .contact-info .desc {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+
+
+.contact-form {
+  background-color: whitesmoke;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 2px;
+  margin-block-end: 30px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.input-field {
+  background-color: rgb(233, 232, 232);
+  color: rgb(24, 19, 26);
+  font-size: 1rem; 
+   padding: 12px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  margin-block-end: 10px;
+  flex: 1;
+}
+
+.input-field::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input-field:focus {
+  outline-color: rgb(222, 49, 57);
+}
+
+.input-field::placeholder {
+  transition: 0.25s ease;
+}
+
+.input-field:focus::placeholder {
+  opacity: 0;
+}
+
+textarea.input-field {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+
+#message::-webkit-scrollbar {
+  width: 8px;
+}
+
+#message::-webkit-scrollbar-track {
+  background-color: #dddcdc;
+  border-radius: 6px;
+}
+
+#message::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+#message::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-block-end: 15px;
+}
+
+.checkbox-wrapper .label {
+  font-size: 1rem; 
+}
+
+.checkbox {
+  width: auto;
+}
+
+.label-link {
+  display: inline-block;
+  color: rgb(222, 49, 57);
+}
+
+.label-link:is(:hover, :focus) {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.response {
+  display: none;
+  margin-top: 20px;
+  color: orangered;
+}
+
+@media (max-width: 768px) {
+  .input-field {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    width: 75%; 
+  }
+
+  .input-wrapper {
+    flex-direction: column; 
+  }
+
+  .input-field {
+    width: 100%; 
+  }
+}
+
